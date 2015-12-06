@@ -1,0 +1,66 @@
+$blue: #313744;
+$darkerBlue: darken($blue, 7%);
+$lighterBlue: lighten($blue, 55%);
+
+
+body {
+   font-family: 'Lato', sans-serif;
+   background-color: $blue;
+   color: $darkerBlue;
+}
+
+.container {
+   width: 80%;
+   margin: 0 auto;
+}
+
+.box {
+   margin-top: 50px;
+   padding: 15px 75px;
+   background-color: white;
+   border-radius: 5px;
+   border: 10px solid $darkerBlue;
+}
+
+.creditbox {
+   @extend .box;
+   border: 5px solid $darkerBlue;
+   margin: 25px auto 0px;
+   padding: 5px 75px;
+   background-color: $lighterBlue;
+   width: 65%;
+}
+
+.addPersonButton {
+   padding: 8px;
+   border-radius: 3px;
+   margin-left: 15px;
+   background-color: $lighterBlue;
+   border: 3px solid $darkerBlue;
+
+   &:hover {
+      box-shadow: 1px 1px 5px #999;
+      cursor: pointer;
+   }
+}
+input {
+   padding: 8px;
+   border: 2px solid $blue;
+}
+
+ul {
+   display: inline-block;
+}
+
+li {
+   list-style-type: decimal;
+   margin-bottom: 10px;
+   font-size: 1.2em;
+   cursor: pointer;
+
+   &:hover {
+      margin-left: 5px;
+   }
+
+}
+

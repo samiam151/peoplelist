@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+<head>
+  <meta charset="utf-8">
+  <title>All the People: Angular List</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="box" ng-controller="ListCtrl">
+    <h1>The Guest List</h1>
+    <p>To add a person to the list, type the name in the form and click "Add Person".
+    <br>To remove a person from the list, simply click the name of the person.</p>
+
+    <people-list></people-list>
+
+    <form ng-submit="addPerson(newPerson)">
+      <input type="text" ng-model="newPerson" placeholder="Enter Name">
+      <button class="addPersonButton" type="submit">Add Person</button>
+    </form>
+  </div>
+
+  <div class="creditbox">
+    <p>This is a simple AngularJS app that adds and removes names of people from a list. It's like a to-do list, but for poeple. Use it to plan a dinner party!</p>
+  </div>
+</div>  
+
+  <script src="script.js"></script>
+</body>
+</html>

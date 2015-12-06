@@ -1,0 +1,49 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #313744;
+  color: #22262f; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+.box, .creditbox {
+  margin-top: 50px;
+  padding: 15px 75px;
+  background-color: white;
+  border-radius: 5px;
+  border: 10px solid #22262f; }
+
+.creditbox {
+  border: 5px solid #22262f;
+  margin: 25px auto 0px;
+  padding: 5px 75px;
+  background-color: #bec3d0;
+  width: 65%; }
+
+.addPersonButton {
+  padding: 8px;
+  border-radius: 3px;
+  margin-left: 15px;
+  background-color: #bec3d0;
+  border: 3px solid #22262f; }
+  .addPersonButton:hover {
+    box-shadow: 1px 1px 5px #999;
+    cursor: pointer; }
+
+input {
+  padding: 8px;
+  border: 2px solid #313744; }
+
+ul {
+  display: inline-block; }
+
+li {
+  list-style-type: decimal;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  cursor: pointer; }
+  li:hover {
+    margin-left: 5px; }
+
+/*# sourceMappingURL=style.css.map */
